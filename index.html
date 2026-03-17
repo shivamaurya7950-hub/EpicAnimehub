@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Anime Hub</title>
+  <meta name="description" content="Watch 46 anime posters in a mobile-friendly Netflix-style layout. Categories: Action, Romance, Fantasy, Comedy. Includes search and episode buttons.">
+  <meta name="keywords" content="Anime, Epic Anime, Anime World, Netflix style anime, Naruto, One Piece, Bleach">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #222;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      background-color: #f0f0f0;
+    }
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    /* Anime grid */
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 15px;
+    }
+    .anime-card {
+      text-align: center;
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .anime-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .anime-card button {
+      margin-top: 8px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .anime-card button:hover {
+      background-color: #555;
+    }
+
+    /* Responsive mobile */
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+      nav a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Epic Anime Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <!-- Search bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search anime...">
+  </div>
+
+  <!-- Anime Grid -->
+  <div class="anime-grid" id="animeGrid">
+    <!-- 46 placeholder anime cards -->
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+1" alt="Anime 1"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+2" alt="Anime 2"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+3" alt="Anime 3"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+4" alt="Anime 4"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+5" alt="Anime 5"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+6" alt="Anime 6"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+7" alt="Anime 7"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+8" alt="Anime 8"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+9" alt="Anime 9"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+10" alt="Anime 10"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+11" alt="Anime 11"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+12" alt="Anime 12"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+13" alt="Anime 13"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+14" alt="Anime 14"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+15" alt="Anime 15"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+16" alt="Anime 16"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+17" alt="Anime 17"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+18" alt="Anime 18"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+19" alt="Anime 19"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+20" alt="Anime 20"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+21" alt="Anime 21"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+22" alt="Anime 22"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+23" alt="Anime 23"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+24" alt="Anime 24"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+25" alt="Anime 25"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+26" alt="Anime 26"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+27" alt="Anime 27"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+28" alt="Anime 28"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+29" alt="Anime 29"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+30" alt="Anime 30"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+31" alt="Anime 31"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+32" alt="Anime 32"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+33" alt="Anime 33"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+34" alt="Anime 34"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+35" alt="Anime 35"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+36" alt="Anime 36"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+37" alt="Anime 37"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+38" alt="Anime 38"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+39" alt="Anime 39"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+40" alt="Anime 40"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+41" alt="Anime 41"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+42" alt="Anime 42"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+43" alt="Anime 43"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+44" alt="Anime 44"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+45" alt="Anime 45"><button>Episodes</button></div>
+    <div class="anime-card"><img src="https://via.placeholder.com/200x300?text=Anime+46" alt="Anime 46"><button>Episodes</button></div>
+  </div>
+
+  <!-- Search script -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const animeGrid = document.getElementById('animeGrid');
+    const cards = animeGrid.getElementsByClassName('anime-card');
+
+    searchInput.addEventListener('keyup', function() {
+      const filter = searchInput.value.toLowerCase();
+      for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].getElementsByTagName('img')[0].alt.toLowerCase();
+        if (title.includes(filter)) {
+          cards[i].style.display = '';
+        } else {
+          cards[i].style.display = 'none';
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
